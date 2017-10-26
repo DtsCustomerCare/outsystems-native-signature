@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.joaquim.signature"
+    version="0.1">
+  <name>Signature plugin</name>
+  
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="signaturePlugin">
+	      <param name="android-package" value="org.joaquim.signature.signaturePlugin" />
+      </feature>
+    </config-file>
+    
+    <config-file target="AndroidManifest.xml" parent="/manifest/application" mode="merge">
+      <activity android:name="org.joaquim.signature.signatureActivity" 
+        android:theme="@android:style/Theme.Dialog" />      
+    </config-file>
+
+    <js-module name="signaturePlugin" src="www/signaturePlugin.js">
+		  <clobbers target="cordova.plugins.signaturePlugin" />
+    </js-module>
+         
+    <source-file src="src/android/signaturePlugin.java" target-dir="src/org/joaquim/signature" />
+    <source-file src="src/android/signatureActivity.java" target-dir="src/org/joaquim/signature" />
+    <source-file src="src/android/com/github" target-dir="src/com" />
+
+    <resource-file src="src/android/res/layout/activity_signature.xml" target="res/layout/activity_signature.xml" />
+    <resource-file src="src/android/res/values/dimens.xml" target="res/values/dimens.xml" />
+    <resource-file src="src/android/res/values/attrs.xml" target="res/values/attrs.xml" />
+
+    <resource-file src="src/android/res/drawable/" target="res/drawable/" />
+
+  </platform>
+</plugin>
