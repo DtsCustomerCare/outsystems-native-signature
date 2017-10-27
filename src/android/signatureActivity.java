@@ -156,9 +156,9 @@ public class signatureActivity extends Activity
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
         byte[] byteArray = byteArrayOutputStream.toByteArray();
-        String encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-        return "data:image/png;base64," + encoded;
-        //return encoded;
+        String encoded = Base64.encodeToString(byteArray, Base64.NO_WRAP);
+        //return "data:image/png;base64," + encoded;
+        return encoded;
     }
 
     private void finishWithResult(String result, int status)
