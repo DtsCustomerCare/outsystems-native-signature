@@ -60,7 +60,7 @@ public class SignaturePad extends View {
 
     //Default attribute values
     private final int DEFAULT_ATTR_PEN_MIN_WIDTH_PX = 3;
-    private final int DEFAULT_ATTR_PEN_MAX_WIDTH_PX = 7;
+    private final int DEFAULT_ATTR_PEN_MAX_WIDTH_PX = 4;
     private final int DEFAULT_ATTR_PEN_COLOR = Color.BLUE;
     private final float DEFAULT_ATTR_VELOCITY_FILTER_WEIGHT = 1.0f;
     private final boolean DEFAULT_ATTR_CLEAR_ON_DOUBLE_CLICK = false;
