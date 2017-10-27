@@ -59,10 +59,10 @@ public class SignaturePad extends View {
     private static final int DOUBLE_CLICK_DELAY_MS = 200;
 
     //Default attribute values
-    private final int DEFAULT_ATTR_PEN_MIN_WIDTH_PX = 2;
-    private final int DEFAULT_ATTR_PEN_MAX_WIDTH_PX = 3;
+    private final int DEFAULT_ATTR_PEN_MIN_WIDTH_PX = 3;
+    private final int DEFAULT_ATTR_PEN_MAX_WIDTH_PX = 7;
     private final int DEFAULT_ATTR_PEN_COLOR = Color.BLUE;
-    private final float DEFAULT_ATTR_VELOCITY_FILTER_WEIGHT = 0.9f;
+    private final float DEFAULT_ATTR_VELOCITY_FILTER_WEIGHT = 1.0f;
     private final boolean DEFAULT_ATTR_CLEAR_ON_DOUBLE_CLICK = false;
 
     private Paint mPaint = new Paint();
