@@ -96,7 +96,7 @@ public class signaturePlugin extends CordovaPlugin
                 String result = res.getString("results");
                 Log.d("FIRST", "result:" + result);
                 this.callbackContext.success(result.toString());
-            } else if (resultCode == this.cordova.getActivity().RESULT_CANCEL) {
+            } else if (resultCode == this.cordova.getActivity().RESULT_CANCELED) {
                 this.callbackContext.success("");
             } else {
                 this.callbackContext.error("Error");
