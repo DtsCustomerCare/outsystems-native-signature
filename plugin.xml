@@ -20,6 +20,8 @@
     <js-module name="signaturePlugin" src="www/signaturePlugin.js">
 		  <clobbers target="cordova.plugins.signaturePlugin" />
     </js-module>
+
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference"/>
          
     <source-file src="src/android/signaturePlugin.java" target-dir="src/org/joaquim/signature" />
     <source-file src="src/android/signatureActivity.java" target-dir="src/org/joaquim/signature" />
